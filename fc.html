@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background-image: url('bgg.jpg'); /* Specify your background image here */
+    background-size: cover;
+    background-position: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5); /* Add transparency to the background color */
+    padding: 10px; /* Add some padding to the topnav */
+    padding-left: 60px; /* Add left padding for logo */
+}
+
+.logo {
+    float: left;
+    margin-left: 10px; /* Adjust margin as needed */
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.active {
+    background-color: #777076;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+ 
+	
+        <a href="home page.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="team.html">Team</a>
+    <div class="dropdown">
+        <button class="dropbtn">Explore 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="fc.html">Fact Checking</a>
+            <a href="ty.html">Test Yourself!</a>
+        </div>
+    </div> 
+    <a href="ref.html">References</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<h1>What is Fact Checking?</h1>
+
+<p>Fact-checking is a process of investigating, evaluating, and researching the information to ensure that it is reliable and factual. These days, people are more likely to rely on information that is directly delivered to them without fully understanding whether it is accurate or not. This is because information may be easily manipulated. Verifying whether the content is reliable and to avoid spreading misinformation is the goal of fact-checking.</p>
+
+<h2>Why is Fact Checking Important?</h2>
+
+<p>The spread of information via social media, news, and educational purposes is particularly significant due to its easy transmission and ability to impact individuals' beliefs and behaviors. Since there could be consequences for publishing false substances, fact-checking is essential to ensure the content is accurate before sharing it with others.</p>
+
+<ul>
+  <li>To prevent the spread of false information; people can become confused by material lacking important context.</li>
+  <li>The ability to distinguish between false information, opinions, and facts.</li>
+  <li>Increase credibility.</li>
+  <li>Avoid potential ethical and legal issues.</li>
+  <li>To ensure the content is trustworthy and accurate.</li>
+  <li>Verifying the accuracy and validity of the information.</li>
+  <li>It can help in your understanding of ideas you are currently familiar with or would like to learn more about.</li>
+</ul>
+
+<h2>How to identify MISINFORMATION & DISINFORMATION</h2>
+
+<p><strong>Questionable sources:</strong> Be wary of information from unreliable or untrustworthy origins lacking credibility.</p>
+
+<p><strong>Lacks evidence:</strong> Watch out for content that lacks supporting evidence or verifiable facts.</p>
+
+<p><strong>Full of opinion:</strong> Recognize information that is heavily opinionated, as it may not present objective facts.</p>
+
+<p><strong>Poor context:</strong> Be cautious of information presented without proper context, as it may be misleading.</p>
+
+<p><strong>Doubtful site, author, or publisher:</strong> Investigate the credibility of the website, author, or publisher to ensure reliability.</p>
+
+<p><strong>Lacks logic:</strong> Question information that lacks logical coherence or follows an irrational narrative.</p>
+
+<p><strong>Emotional or sensational:</strong> Be skeptical of information designed to evoke strong emotions or sensationalize events.</p>
+
+<p><strong>Careless presentation:</strong> Watch for poorly presented information with grammatical errors or formatting issues.</p>
+
+<p><strong>Clear malicious intentions:</strong> Identify content with obvious intent to deceive, harm, or manipulate.</p>
+
+<p><strong>One-sided:</strong> Be cautious of information that presents only one perspective without acknowledging alternative views.</p>
+
+<p><strong>Erroneous information:</strong> Watch for inaccuracies, as genuine content strives for accuracy and factual correctness.</p>
+
+<p><strong>No objectivity:</strong> Be skeptical of content that lacks objectivity and appears biased in its reporting.</p>
+
+<p><strong>No accountability:</strong> Be wary of information without clear attribution or accountability for its accuracy.</p>
+
+<p><strong>Outdated:</strong> Watch for information that is no longer current, as outdated news may no longer be relevant. Ensure that the content is up to date to accurately reflect the current situation or events.</p>
+
+
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background-image: url('bgg.jpg'); /* Specify your background image here */
+    background-size: cover;
+    background-position: center;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+.topnav {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5); /* Add transparency to the background color */
+    padding: 10px; /* Add some padding to the topnav */
+    padding-left: 60px; /* Add left padding for logo */
+}
+
+.logo {
+    float: left;
+    margin-left: 10px; /* Adjust margin as needed */
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.active {
+    background-color: #777076;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    
+        <a href="home page.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="team.html">Team</a>
+    <div class="dropdown">
+        <button class="dropbtn">Explore 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+
+            <a href="fc.html">Fact Checking</a>
+            <a href="ty.html">Test Yourself!</a>
+        </div>
+    </div> 
+    <a href="ref.html">References</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div style="text-align: center;">
+    <h1 style="color: #6d3b47;">FAKE-NEWS ON SOCIAL MEDIA</h1>
+</div>
+</style>
+</head>
+<body>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+
+  <img src="fn.png" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+
+  <img src="ff.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="nn.jpg" style="width:100%">
+
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Fact Check</title>
+</head>
+<body>
+<center>
+<p>&nbsp;</p> <!-- Space -->
+<p>&nbsp;</p> <!-- Space -->
+<p>&nbsp;</p> <!-- Space -->
+<img src="2.png" alt="Example Image" width="650" height="400">
+<p>Vice President Sara Duterte didn’t say K-12 was abolished in DepEd’s 2023 Report</p>
+
+<p>*The fake source has already been taken down</p>
+
+<p>Link for Fact Check:</p>
+<a href="https://www.rappler.com/newsbreak/fact-check/sara-duterte-did-not-say-k-12-abolished-department-of-education-2023-report/">https://www.rappler.com/newsbreak/fact-check/sara-duterte-did-not-say-k-12-abolished-department-of-education-2023-report/</a>
+
+<p>&nbsp;</p> <!-- Space -->
+<p>&nbsp;</p> <!-- Space -->
+<img src="1.png" alt="Example Image" width="650" height="400">
+<p>Drag artist Pura Luka Vega is alive</p>
+
+<p>Link of Fact Check: <a href="https://www.rappler.com/newsbreak/fact-check/drag-artist-pura-luka-vega-alive/">https://www.rappler.com/newsbreak/fact-check/drag-artist-pura-luka-vega-alive/</a></p>
+
+<p>&nbsp;</p> <!-- Space -->
+<p>&nbsp;</p> <!-- Space -->
+<img src="4.png" alt="Example Image" width="650" height="400">
+<p>₱750 National Minimum Wage Hike</p>
+
+<p>Link of fake news: <a href="https://www.youtube.com/watch?v=rN49Wx3pfBE">https://www.youtube.com/watch?v=rN49Wx3pfBE</a></p>
+
+<p>Link for fact check: <a href="https://www.rappler.com/newsbreak/fact-check/social-pension-indigent-senior-citizens-raised-thousand-pesos/">https://www.rappler.com/newsbreak/fact-check/social-pension-indigent-senior-citizens-raised-thousand-pesos/</a></p>
+
+<p>&nbsp;</p> <!-- Space -->
+<p>&nbsp;</p> <!-- Space -->
+<img src="3.png" alt="Example Image" width="650" height="400">
+<p>Social pension for indigent senior citizens raised to P1,000, not P20,000</p>
+
+<p>Link of fake news: <a href="https://www.youtube.com/watch?v=ioPC8PxU2P4">https://www.youtube.com/watch?v=ioPC8PxU2P4</a></p>
+
+<p>Link for fact check: <a href="https://www.rappler.com/newsbreak/fact-check/national-minimum-wage-will-increase-750-pesos-june-2022/">https://www.rappler.com/newsbreak/fact-check/national-minimum-wage-will-increase-750-pesos-june-2022/</a></p>
+
+
+<p>&nbsp;</p> <!-- Space -->
+<p>&nbsp;</p> <!-- Space -->
+<img src="5.png" alt="Example Image" width="650" height="400">
+<p>PhilSys program offering P5,000 aid for national ID holders</p>
+
+<p>Link for fact-check: <a href="https://www.rappler.com/newsbreak/fact-check/no-philsys-program-offering-aid-national-id-holders/?cx_testId=2&cx_testVariant=cx_1&cx_artPos=0&cx_experienceId=EX4CPN0G1RJL#cxrecs_s">https://www.rappler.com/newsbreak/fact-check/no-philsys-program-offering-aid-national-id-holders/?cx_testId=2&cx_testVariant=cx_1&cx_artPos=0&cx_experienceId=EX4CPN0G1RJL#cxrecs_s</a></p>
+
+</center>
+</body>
+</html>
+
+
+</body>
+</html>
+
+
+</body>
+</html>
